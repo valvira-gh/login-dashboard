@@ -82,3 +82,12 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.main-layout {
+  width: 100vw;
+
+  & > div {
+    width: 100%;
+
+  }
+}

@@ -18,7 +18,7 @@ export default function MainLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div>
+    <div className="main-layout">
       <div className={ubuntu.className}>
         <Header />
       </div>
