@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100svw;
+
+    border: 1px solid black;
+}
+
+.navList {
+    list-style: none;
+    margin-left: 1em;
+    display: flex;
+}
+
+.navItem {
+    text-decoration: none;
+    margin: 1em;
+}
+
+.navLink {
+    text-decoration: none;
+    color: black;
+
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.active {
+    color: black;
+}
+
+.passive {
+    color: grey;
+}
