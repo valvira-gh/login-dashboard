@@ -2,9 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100svw;
+    width: 100%;
 
-    border: 1px solid black;
+    border-bottom: 1px solid rgb(80, 80, 80);
 }
 
 .navList {

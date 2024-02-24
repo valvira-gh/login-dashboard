@@ -11,7 +11,7 @@ const navLinks = [
 const Header: React.FC = () => {
   return (
     <header className={styles.header}>
-      <Image src="/../../favicon.ico" alt="logo" width={40} height={40} />
+      <Image src="/../../favicon.ico" alt="logo" width={35} height={35} />
       <ul className={styles.navList}>
         {navLinks.map(({ url, label }, index) => (
           <li key={index} className={styles.navItem}>
