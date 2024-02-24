@@ -3,9 +3,9 @@ import { NextResponse } from 'next/server';
 
 export async function GET(request: Request) {
     const { searchParams } = new URL(request.url);
-    const name = searchParams.get('name');
-    const email = searchParams.get('email');
-    const password = searchParams.get('password');
+    const name = 'test-user'
+    const email = 'test@test.com'
+    const password = 'salasana123';
 
     try {
         if (!name || !email || !password) throw new Error('Missing required fields');

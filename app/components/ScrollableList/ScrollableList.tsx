@@ -37,18 +37,17 @@ const ScrollableList: React.FC = () => {
 
   return (
     <div className={styles.scrollableList}>
-      {items.map((item) => (
-        <Accordion defaultIndex={[0]} allowToggle>
-          <AccordionItem border={1}>
+      <Accordion defaultIndex={[0]} allowToggle>
+        {items.map((item) => (
+          <AccordionItem key={item.id} border={1}>
             <AccordionButton>
               <AccordionIcon />
               <p className={styles.label}>{item.label}</p>
             </AccordionButton>
             <AccordionPanel pb={4}>Content of {item.label}.</AccordionPanel>
           </AccordionItem>
-        </Accordion>
-      ))}
-
+        ))}
+      </Accordion>
       {/* <ul className={styles.list}>
         {items.map((item) => (
           <li key={item.id} className={styles.listItem}>
