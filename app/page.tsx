@@ -1,5 +1,5 @@
 import styles from "./page.module.css";
-import ScrollableList from "../components/ScrollableList/ScrollableList";
+import ScrollableList from "./components/ScrollableList/ScrollableList";
 
 const Home: React.FC = () => {
   return (
