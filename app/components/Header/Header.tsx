@@ -11,14 +11,16 @@ const navLinks = [
 const Header: React.FC = () => {
   return (
     <header className={styles.header}>
-      <Image src="/../../favicon.ico" alt="logo" width={35} height={35} />
-      <ul className={styles.navList}>
-        {navLinks.map(({ url, label }, index) => (
-          <li key={index} className={styles.navItem}>
-            <NavLink href={url}>{label}</NavLink>
-          </li>
-        ))}
-      </ul>
+      <div className={styles.headerWrapper}>
+        <Image src="/../../favicon.ico" alt="logo" width={50} height={50} />
+        <ul className={styles.navList}>
+          {navLinks.map(({ url, label }, index) => (
+            <li key={index} className={styles.navItem}>
+              <NavLink href={url}>{label}</NavLink>
+            </li>
+          ))}
+        </ul>
+      </div>
     </header>
   );
 };

@@ -10,27 +10,29 @@ export const metadata: Metadata = {
     `Another learning target was PostgreSQL database, which is deployed in Vercel along with the rest of the app.`,
 };
 
-export default function MainLayout({
+const ubuntu = Ubuntu({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+});
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+export default function Layout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const ubuntu = Ubuntu({
-    subsets: ["latin"],
-    weight: ["400", "500", "700"],
-  });
-
-  const roboto = Roboto({
-    subsets: ["latin"],
-    weight: ["400", "700"],
-  });
-
   return (
-    <div className="main-layout">
-      <div className={ubuntu.className}>
-        <Header />
-      </div>
-      <main className={roboto.className}>{children}</main>
-    </div>
+    <html lang="en">
+      <body>
+        <div className={ubuntu.className}>
+          <Header />
+        </div>
+        <main className={roboto.className}>{children}</main>
+      </body>
+    </html>
   );
 }
