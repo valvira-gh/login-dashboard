@@ -34,18 +34,3 @@ export default function MainLayout({
     </div>
   );
 }
-
-export default function MainLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <div className="main-layout">
-      <div className={ubuntu.className}>
-        <Header />
-      </div>
-      <main className={roboto.className}>{children}</main>
-    </div>
-  );
-}
