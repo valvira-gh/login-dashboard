@@ -5,7 +5,8 @@ const linkData = [
   { id: 1, label: `User Settings`, url: `/dashboard/settings` },
   { id: 2, label: `Analytics`, url: `/dashboard/analytics` },
   { id: 3, label: `Billing`, url: `/dashboard/billing` },
-  { id: 4, label: `Logout`, url: `/logout` },
+  { id: 4, label: `Database`, url: `/dashboard/database` },
+  { id: 5, label: `Logout`, url: `/logout` },
 ];
 
 const DashboardPanel: React.FC = () => {
@@ -16,7 +17,7 @@ const DashboardPanel: React.FC = () => {
         <ul className={styles.linksList}>
           {linkData.map(
             ({ id, label, url }): React.ReactNode =>
-              id < 4 && (
+              id < 5 && (
                 <li key={id} className={styles.linkItem}>
                   <DashboardLink href={url}>{label}</DashboardLink>
                 </li>
