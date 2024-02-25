@@ -1,10 +1,19 @@
 import styles from "./page.module.css";
 
+const dashboardLinks = [
+  { label: `User Settings`, url: `/dashboard/settings` },
+  { label: `Analytics`, url: `/dashboard/analytics` },
+  { label: `Billing`, url: `/dashboard/billing` },
+  { label: `Logout`, url: `/logout` },
+];
+
 const Dashboard: React.FC = () => {
+  //
+
   return (
-    <div className={styles.dashboard}>
-      <h1>Dashboard</h1>
-    </div>
+    <section className={styles.dashboard}>
+      <h3 className={styles.title}>Dashboard</h3>
+    </section>
   );
 };
 
