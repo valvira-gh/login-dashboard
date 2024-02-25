@@ -24,6 +24,7 @@ const DashboardLink: React.FC<Props> = ({
     <button
       type="button"
       className={`${styles.link} ${active ? styles.active : ""}`}
+      onClick={() => router.push(href)}
     >
       {children}
     </button>
