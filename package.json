@@ -4,19 +4,16 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && next build",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "postinstall": "prisma generate"
+    "lint": "next lint"
   },
   "dependencies": {
     "@chakra-ui/next-js": "^2.2.0",
     "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
-    "@prisma/client": "^5.10.2",
     "@vercel/postgres": "^0.7.2",
-    "dotenv": "^16.4.5",
     "framer-motion": "^11.0.6",
     "next": "14.1.0",
     "prisma": "^5.10.2",
