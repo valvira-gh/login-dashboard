@@ -1,5 +1,4 @@
 import styles from "./page.module.css";
-import { PrismaClient } from "@prisma/client";
 import { FetchUsersBtn } from "./actions";
 
 const Database: React.FC = async () => {
