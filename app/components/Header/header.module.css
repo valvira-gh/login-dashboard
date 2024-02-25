@@ -3,8 +3,9 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-
-    border-bottom: 2px solid rgb(0, 0, 0);
+    height: 15vh;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 4px solid rgb(0, 0, 0);
 }
 
 .headerWrapper {
@@ -35,9 +36,6 @@
 }
 
 .active {
-    color: black;
-}
-
-.passive {
-    color: grey;
+    color: gray;
+    text-decoration: underline;
 }
