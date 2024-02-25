@@ -1,0 +1,24 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = "postgres://default:peu5JXnNbLA4@ep-lucky-frog-a4w2o2za.us-east-1.aws.neon.tech/verceldb?sslmode=require"
+  directUrl = env("POSTGRES_URL_NON_POOLING")
+}
+
+model new_users {
+  id       Int      @id @default(autoincrement())
+  name     String?  @unique @db.VarChar(255)
+  email    String?  @unique @db.VarChar(255)
+  password String?  @db.VarChar(255)
+  islogged Boolean? @default(false)
+}
+
+model users {
+  id       Int     @id @default(autoincrement())
+  name     String? @unique @db.VarChar(255)
+  email    String? @unique @db.VarChar(255)
+  password String? @db.VarChar(255)
+}
