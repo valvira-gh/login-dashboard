@@ -6,6 +6,7 @@ import NavLink from "./NavLink";
 const navLinks = [
   { label: `Home`, url: `/` },
   { label: `Dashboard`, url: `/dashboard` },
+  { label: `Login`, url: `/login` },
 ];
 
 const Header: React.FC = () => {
