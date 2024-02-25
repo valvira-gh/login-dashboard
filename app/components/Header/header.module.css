@@ -36,9 +36,6 @@ height: 15vh;
 }
 
 .active {
-    color: black;
-}
-
-.passive {
-    color: grey;
+    color: gray;
+    text-decoration: underline;
 }
