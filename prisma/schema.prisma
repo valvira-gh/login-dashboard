@@ -5,7 +5,7 @@ generator client {
 datasource db {
   provider  = "postgresql"
   url       = "postgres://default:peu5JXnNbLA4@ep-lucky-frog-a4w2o2za.us-east-1.aws.neon.tech/verceldb?sslmode=require"
-  directUrl = env("POSTGRES_URL_NON_POOLING")
+  directUrl = "postgres://default:peu5JXnNbLA4@ep-lucky-frog-a4w2o2za.us-east-1.aws.neon.tech/verceldb?sslmode=require"
 }
 
 model new_users {
