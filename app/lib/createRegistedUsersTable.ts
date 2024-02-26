@@ -1,4 +1,4 @@
-import { db, sql } from '@/app/database'
+import { db, sql } from '@/database'
 
 export async function seed() {
     const createTable = await db.schema
