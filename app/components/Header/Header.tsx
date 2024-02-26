@@ -14,6 +14,7 @@ const Header: React.FC = () => {
     <header className={styles.header}>
       <div className={styles.headerWrapper}>
         <Image src="/../../favicon.ico" alt="logo" width={50} height={50} />
+        <h2>My Next.js 14 App</h2>
         <ul className={styles.navList}>
           {navLinks.map(({ url, label }, index) => (
             <li key={index} className={styles.navItem}>

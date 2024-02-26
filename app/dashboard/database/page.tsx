@@ -1,22 +1,21 @@
+"use client";
 import styles from "./page.module.css";
+import AddUserForm from "./AddUserForm";
 import { sql } from "@vercel/postgres";
-import { NextResponse } from "next/server";
+import { useState, useEffect } from "react";
 
-export async function GET(request: Request) {
-  try {
-    const result = await sql`SELECT * FROM users WHERE id = 1`;
-    return NextResponse.json({ result }, { status: 200 });
-  } catch (error) {
-    return NextResponse.json({ error }, { status: 500 });
-  }
+interface Props {
+  id: number;
+  name: string;
+  email: string;
+  password: string;
 }
 
-const Database: React.FC = async () => {
-  //
-
+const Database: React.FC = () => {
   return (
     <section className={styles.container}>
       <h3 className={styles.title}>Database</h3>
+      {/* <AddUserForm /> */}
     </section>
   );
 };

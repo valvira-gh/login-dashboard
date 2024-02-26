@@ -1,11 +1,13 @@
 import styles from "./page.module.css";
 import ScrollableList from "./components/ScrollableList/ScrollableList";
+import Example from "./examples/Example";
 
 const Home: React.FC = () => {
   return (
     <main className={styles.main}>
       <div className={styles.container}>
-        <div className={styles.titleDescription}>
+        <Example />
+        {/* <div className={styles.titleDescription}>
           <h1 className={styles.title}>Next.js 14 Demo App</h1>
           <div className={styles.textWrapper}>
             <p className={styles.description}>
@@ -17,7 +19,7 @@ const Home: React.FC = () => {
             </p>
           </div>
         </div>
-        <ScrollableList />
+        <ScrollableList /> */}
       </div>
     </main>
   );
