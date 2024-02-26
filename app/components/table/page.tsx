@@ -1,7 +1,7 @@
 import styles from "./page.module.css";
 import { db } from "@/app/lib/kysely";
 import Image from "next/image";
-import { seed } from "@/app/lib/seed";
+import { seed } from "@/app/lib/createRegistedUsersTable";
 
 const TablePage: React.FC = async () => {
   let users;
